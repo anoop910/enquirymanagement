@@ -6,12 +6,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
+
 import com.anoop.Entity.CoursesEntity;
 import com.anoop.Entity.EnquriryStatusEntity;
 import com.anoop.Repository.CoursesRepo;
 import com.anoop.Repository.EnquriryStatusRepo;
 
-
+@Component
 public class AddStatusAndCourseRunner implements ApplicationRunner {
 
     @Autowired

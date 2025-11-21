@@ -55,7 +55,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         body.append("<p><strong>Temporary Password:</strong></p>");
         body.append("<input type='text' value='" + tempPwd
                 + "' readonly style='padding:8px;font-size:16px;border:1px solid #ccc;border-radius:4px;width:200px;'>");
-        body.append("<p><a href=\"http://localhost:8080/unlock?email=" + toAddress
+        body.append("<p><a href=\"http://13.232.155.64:8080/unlock?email=" + toAddress
                 + "\">Click Here to Unlock Your Account</a></p>");
 
         Boolean isSent = emailUtils.sendEmailForTempPassword(toAddress, subject, body.toString());
